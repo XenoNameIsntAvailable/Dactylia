@@ -1,0 +1,123 @@
+equipments = {
+
+	artillery_equipment = {
+		year = 1934
+
+		is_archetype = yes
+		picture = archetype_artillery_equipment		
+		type = {
+			artillery
+			infantry #adding infantry type
+			#motorized #Removing motorized type
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+
+		#Misc Abilities
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 10
+		breakthrough = 6
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 25
+		hard_attack = 2
+		ap_attack = 5
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 4
+		
+		build_cost_ic = 3
+		resources = {
+			tungsten = 1
+			steel = 2
+		}
+	}
+
+	field_cannons = {
+		year = 1934
+
+		archetype = artillery_equipment
+		priority = 50
+		visual_level = 0
+	}
+	
+	mac_art = {
+		year = 1936
+
+		archetype = artillery_equipment
+		parent = field_cannons
+		priority = 50
+		visual_level = 1
+
+		defense = 16
+		breakthrough = 8
+		soft_attack = 30
+		
+		build_cost_ic = 3.5
+		resources = {
+			tungsten = 1
+			steel = 2
+		}
+	}
+	
+	r_mraps = {
+		year = 1939
+
+		archetype = artillery_equipment
+		parent = mac_art
+		priority = 50
+		visual_level = 2
+		
+		defense = 18
+		breakthrough = 10
+		soft_attack = 35
+		
+		build_cost_ic = 4.0
+		resources = {
+			tungsten = 1
+			steel = 3
+		}
+	}
+laser_orbital_fire = {
+		year = 1942
+
+		archetype = artillery_equipment
+		parent = r_mraps
+		priority = 50
+		visual_level = 2
+		
+		defense = 22
+		breakthrough = 15
+		soft_attack = 40
+		
+		build_cost_ic = 4.5
+		resources = {
+			tungsten = 1
+			steel = 3
+		}
+	}
+magnetic_art_cannon = {
+		year = 1942
+
+		archetype = artillery_equipment
+		parent = mac_art
+		priority = 50
+		visual_level = 2
+		
+		defense = 25
+		breakthrough = 18
+		soft_attack = 45
+		
+		build_cost_ic = 4.5
+		resources = {
+			tungsten = 2
+			steel = 3
+		}
+	}		
+}

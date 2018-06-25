@@ -1,0 +1,942 @@
+technologies = {
+#MG#
+	gatling = {
+
+		enable_subunits = {
+			mg
+		}
+		enable_subunits = {
+			mg_brigade
+		}
+	
+		enable_equipments = {
+			gatling
+		}
+		
+		path = {
+			leads_to_tech = mg
+			research_cost_coeff = 1
+		}
+
+		start_year = 1934
+		
+		research_cost = 1.5
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -8 y = 0 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+		
+		}
+	}
+	
+	mg = {
+
+		enable_equipments = {
+			mg
+		}
+		
+		path = {
+			leads_to_tech = lmg
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1936
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -8 y = 2 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+
+			
+			}
+		}
+	
+	
+	lmg = {
+	
+		enable_equipments = {
+			lmg
+		}
+
+		
+		path = {
+			leads_to_tech = rapid_fire
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1939
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -8 y = 4 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+		
+		}
+	}
+	
+	rapid_fire = {
+
+		mg = {
+			soft_attack = 0.15
+		}
+		mg = {
+			soft_attack = 0.15
+		}
+		
+		
+		
+		path = {
+			leads_to_tech = rpc
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1941
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -8 y = 8 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+	
+		}
+	}
+	
+	rpc = {
+
+enable_equipments = { rapid_fire_cannons }
+		
+		path = {
+			leads_to_tech = magnetic_cannons
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1942
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -8 y = 10 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+		
+		}
+	}
+	
+	magnetic_cannons = {
+	
+		enable_equipments = { magnetic_cannons }
+		
+		path = {
+			leads_to_tech = magnetic_stability_upgrade
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+
+		start_year = 1944
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -8 y = 14 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			
+		}
+	}
+	
+	magnetic_stability_upgrade	= {
+	
+		mg = {
+			soft_attack = 0.15
+		}
+		mg = {
+			soft_attack = 0.15
+		}
+		
+
+		
+		research_cost = 2
+
+		start_year = 1945
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -8 y = 16 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			
+		}
+	}	
+#ART#
+	field_cannons = {
+
+		enable_equipments = {
+			field_cannons
+		}
+		enable_subunits = {
+			artillery
+		}
+		enable_subunits = {
+			artillery_brigade
+		}
+		path = {
+			leads_to_tech = mobile_art_cannons 
+			research_cost_coeff = 1
+		}
+
+		start_year = 1934
+		
+		research_cost = 1.5
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+		
+		}
+	}
+	
+	mobile_art_cannons = {
+
+		enable_equipments = {
+			mac_art
+		}
+		
+		path = {
+			leads_to_tech = r_mraps
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1936
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+
+			
+			}
+		}
+	
+	
+	r_mraps = {
+	
+		enable_equipments = {
+			r_mraps
+		}
+
+		
+		path = {
+			leads_to_tech = l_upg
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1939
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+		
+		}
+	}
+	
+	l_upg = {
+
+		artillery = {
+			soft_attack = 0.125
+		}
+		artillery_brigade = {
+			soft_attack = 0.125
+		}
+		
+		
+		
+		path = {
+			leads_to_tech = laser_fire
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1941
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+	
+		}
+	}
+	
+	laser_fire = {
+
+enable_equipments = { laser_orbital_fire }
+		
+		path = {
+			leads_to_tech = magnetic_upg
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1942
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+		
+		}
+	}
+	
+	magnetic_upg = {
+	
+		artillery = {
+			soft_attack = 0.15
+		}
+		artillery_brigade = {
+			soft_attack = 0.15
+		}
+		
+		path = {
+			leads_to_tech = magnetic_art_cannon
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+
+		start_year = 1943
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			
+		}
+	}
+	
+	magnetic_art_cannon = {
+
+enable_equipments = { magnetic_art_cannon }
+		
+		research_cost = 1
+
+		start_year = 1945
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 16 }
+		}
+		
+		path = {
+			leads_to_tech = magnetic_stability
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+		
+		}
+	}
+	magnetic_stability	= {
+	
+		artillery = {
+			soft_attack = 0.10
+		}
+		artillery_brigade = {
+			soft_attack = 0.10
+		}
+		
+
+		
+		research_cost = 2
+
+		start_year = 1946
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 18 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			
+		}
+	}	
+
+#AA#
+	old_aa = {
+
+		enable_equipments = {
+			old_aa
+		}
+		enable_subunits = {
+			aa
+		}
+		enable_subunits = {
+			aa_brigade
+		}
+		enable_building = {
+			building = anti_air
+			level = 5
+		}
+		
+		path = {
+			leads_to_tech = high_aa
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1934
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+		}
+	}
+	
+	high_aa = {
+
+		enable_equipments = {
+			high_aa
+		}
+
+		industry_air_damage_factor = -0.08
+		
+		path = {
+			leads_to_tech = auto_defense_system
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1936
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+		}
+	}
+	
+	auto_defense_system = {
+	
+		anti_air = {
+			air_attack = 0.1
+		}
+		anti_air_brigade = {
+			air_attack = 0.1
+		}
+
+		static_anti_air_damage_factor = 0.1
+
+
+		
+		path = {
+			leads_to_tech = rocket_defense
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1939
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+		}
+	}
+	
+	rocket_defense = {
+
+		enable_equipments = {
+			rocket_defense
+		}
+		
+		industry_air_damage_factor = -0.08
+
+		path = {
+			leads_to_tech = laser_tower
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1941
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+		}
+	}
+	
+	laser_tower = {
+
+		enable_equipments = {
+			laser_tower
+		}
+
+		industry_air_damage_factor = -0.08
+		
+		path = {
+			leads_to_tech = magnetic_improvements
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1942
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+		}
+	}
+	
+	magnetic_improvements = {
+
+		path = {
+			leads_to_tech = magnetic_tower
+			research_cost_coeff = 1
+		}
+
+		static_anti_air_damage_factor = 0.1
+		
+		anti_air = {
+			air_attack = 0.1
+		}
+		anti_air_brigade = {
+			air_attack = 0.1
+		}
+		
+		research_cost = 1
+
+		start_year = 1944
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+		}
+	}
+	magnetic_tower = {
+
+		enable_equipments = {
+			magnetic_tower
+		}
+
+		industry_air_damage_factor = -0.08
+		
+		research_cost = 1
+
+		start_year = 1945
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+		}
+	}
+	#AT#
+	at_rifles = {
+
+		enable_equipments = {
+			at_rifles
+		}
+		enable_subunits = {
+			at
+		}
+		enable_subunits = {
+			at_brigade
+		}
+		path = {
+			leads_to_tech = at_cannons
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1934
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+	
+	at_cannons = {
+
+		enable_equipments = {
+			at_rifles
+		}
+		
+		path = {
+			leads_to_tech = guided_missiles
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1936
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+		}
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+	guided_missiles = {
+		
+		enable_equipments = {
+			guided_missiles
+		}
+		
+		
+		path = {
+			leads_to_tech = eletronic_connections_stud
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1939
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+	
+	eletronic_connections_stud = {
+
+		anti_tank = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		
+		path = {
+			leads_to_tech = eletronic_warfare
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1941
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+	
+	eletronic_warfare = {
+
+	   enable_equipments = {
+			eletronic_weapons
+		}
+	
+		path = {
+			leads_to_tech = advanced_control_studies
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1942
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+	
+	advanced_control_studies = {
+			
+
+			
+		anti_tank = {
+			hard_attack = 0.1
+			ap_attack = 0.05
+		}
+		anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.05
+		}
+		
+		research_cost = 1
+
+		start_year = 1944
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = 14 }
+		}
+		
+		path = {
+			leads_to_tech = at_nanites
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+	at_nanites = {
+			
+
+			
+	   enable_equipments = {
+			at_nanites
+		}
+		research_cost = 1
+
+		start_year = 1945
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = 16 }
+		}
+		
+		path = {
+			leads_to_tech = at_nanites
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}	
+	
+}

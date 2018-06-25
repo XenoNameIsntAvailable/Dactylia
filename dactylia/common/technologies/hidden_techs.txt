@@ -1,0 +1,13 @@
+ technologies = {
+ android_owner = {
+        
+		
+		categories = {
+			frontline_army
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

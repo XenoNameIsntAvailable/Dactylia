@@ -1,0 +1,847 @@
+technologies = {
+	#tanks#
+	weap_tractor = { #Leichttraktor
+
+		enable_equipments = {
+			weap_tractor
+		}
+
+		on_research_complete = {
+			hidden_effect = {
+      
+					load_oob = "unlock_tanks"
+				}
+			}
+
+			 custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		
+
+	
+		path = {
+			leads_to_tech = plate_upgrade
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1918
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+		
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}	
+
+	plate_upgrade = { 
+
+      tank_brigade = {
+	  armor = 0.10
+	  defense = 0.10
+	  }
+		
+		path = {
+			leads_to_tech = plate_tank
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	
+	plate_tank = {
+
+		enable_equipments = {
+			plate_tank
+		}
+	
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		path = {
+			leads_to_tech = modern_tank
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	modern_tank = { #Leopard
+
+		enable_equipments = {
+			modern_tank
+		}	
+		
+		research_cost = 2
+		start_year = 1940
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 8 }
+		}
+		path = {
+			leads_to_tech = laser_tank
+			research_cost_coeff = 1
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	laser_tank = {
+
+		enable_equipments = {
+			laser_tank 
+		}
+		
+		path = {
+			leads_to_tech = magnetic_tank 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1942
+
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 12 }
+		}
+	
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+
+	
+	magnetic_tank = { #Panzer IV
+
+		enable_equipments = {
+			magnetic_tank 
+		}
+		
+		
+		research_cost = 2
+		start_year = 1944
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	
+	#armed cars   (assault cars)#
+		old_armed_car = { #Leichttraktor
+
+		enable_equipments = {
+			o_armed_car
+		}
+
+		on_research_complete = {
+			hidden_effect = {
+      
+					load_oob = "unlock_armed_car"
+				}
+			}
+
+			 custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		
+
+	
+		path = {
+			leads_to_tech = cannon_armed_car
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1918
+		folder = {
+			name = armour_folder
+			position = { x = -4 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+		
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}	
+
+	cannon_armed_car = { 
+
+   		enable_equipments = {
+			cannon_armed_car
+		}
+		
+		path = {
+			leads_to_tech = advanced_assault_car
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = armour_folder
+			position = { x = -4 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	
+	advanced_assault_car = {
+
+		enable_equipments = {
+			advanced_assault_car
+		}
+	
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = armour_folder
+			position = { x = -4 y = 8 }
+		}
+		
+		path = {
+			leads_to_tech = futuristic_studies
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	futuristic_studies = { #Leopard
+
+      armed_car = {
+	  armor = 0.10
+	  defense = 0.10
+	  soft_attack = 0.10
+	  }
+		
+		research_cost = 2
+		start_year = 1941
+		
+		folder = {
+			name = armour_folder
+			position = { x = -4 y = 10 }
+		}
+		path = {
+			leads_to_tech = anti_inf_laser_car
+			research_cost_coeff = 1
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	anti_inf_laser_car = {
+
+		enable_equipments = {
+			anti_inf_laser_car 
+		}
+		
+		path = {
+			leads_to_tech = magnetic_car 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1943
+
+		folder = {
+			name = armour_folder
+			position = { x = -4 y = 14 }
+		}
+	
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+
+	
+	magnetic_car = { #Panzer IV
+
+		enable_equipments = {
+			magnetic_car 
+		}
+		
+		
+		research_cost = 2
+		start_year = 1945
+		
+		folder = {
+			name = armour_folder
+			position = { x = -4 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			armor
+		}
+	}
+
+	
+#apcs (mechanized assault)#
+
+	
+	
+		armed_truck = { #Leichttraktor
+
+		enable_equipments = {
+			armed_truck
+		}
+
+		on_research_complete = {
+			hidden_effect = {
+      
+					load_oob = "unlock_armed_truck"
+				}
+			}
+
+			 custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		
+
+	
+		path = {
+			leads_to_tech = cannon_truck
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1918
+		folder = {
+			name = armour_folder
+			position = { x = 4 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+		
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}	
+
+	cannon_truck = { 
+
+   		enable_equipments = {
+			cannon_truck
+		}
+		
+		path = {
+			leads_to_tech = infantry_trasport_improvements
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = armour_folder
+			position = { x = 4 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	
+	infantry_trasport_improvements = {
+
+		apc_brigade = {
+			defense = 0.20
+			armor = 0.10
+		}
+	
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = armour_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		path = {
+			leads_to_tech = armed_advanced_infantry_transport
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	armed_advanced_infantry_transport = { #Leopard
+
+   enable_equipments = {
+   armed_advanced_infantry_transport
+   }
+		
+		research_cost = 2
+		start_year = 1940
+		
+		folder = {
+			name = armour_folder
+			position = { x = 4 y = 8 }
+		}
+		path = {
+			leads_to_tech = laser_apc
+			research_cost_coeff = 1
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	laser_apc = {
+
+		enable_equipments = {
+			laser_apc 
+		}
+		
+		path = {
+			leads_to_tech = magnetic_apc 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1942
+
+		folder = {
+			name = armour_folder
+			position = { x = 4 y = 12 }
+		}
+	
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+
+	
+	magnetic_apc = { #Panzer IV
+
+		enable_equipments = {
+			magnetic_apc 
+		}
+		
+		
+		research_cost = 2
+		start_year = 1944
+		
+		folder = {
+			name = armour_folder
+			position = { x = 4 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+
+	
+	#androids#
+
+	
+	   steel_android = { #Leichttraktor
+
+        dependencies = {
+            android_owner = 1
+        }
+	   
+		enable_equipments = {
+			steel_android
+		}
+
+		on_research_complete = {
+			hidden_effect = {
+      
+					load_oob = "load_android"
+				}
+			}
+
+			 custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		
+
+	
+		path = {
+			leads_to_tech = semi_human_tissues
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = armour_folder
+			position = { x = -8 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+		
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}	
+
+	semi_human_tissues = { 
+
+    android_aa = { 
+	defense = 0.10
+	soft_attack = 0.10 
+	armor = 0.10 
+	}
+    android_at = { 
+	defense = 0.10
+	soft_attack = 0.10 
+	armor = 0.10 
+	}
+    android_infantry = { 
+	defense = 0.10
+	soft_attack = 0.10 
+	armor = 0.10 
+	}
+    android_artillery = { 
+	defense = 0.10
+	soft_attack = 0.10 
+	armor = 0.10 
+	}
+    android_company = { 
+	defense = 0.10
+	soft_attack = 0.10 
+	armor = 0.10 
+	}
+		
+		path = {
+			leads_to_tech = semi_human_android
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = armour_folder
+			position = { x = -8 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	
+	semi_human_android = {
+
+     enable_equipments = {
+	 semi_human_android
+	 }
+	
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = armour_folder
+			position = { x = -8 y = 8 }
+		}
+		
+		path = {
+			leads_to_tech = enhanced_mobility
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	enhanced_mobility = { #Leopard
+
+    android_aa = { 
+	   breaktrough = 0.175
+   soft_attack = 0.05
+   hard_attack = 0.05
+	}
+    android_at = { 
+	   breaktrough = 0.175
+   soft_attack = 0.05
+   hard_attack = 0.05
+	}
+    android_infantry = { 
+	   breaktrough = 0.175
+   soft_attack = 0.05
+   hard_attack = 0.05
+	}
+    android_artillery = { 
+	   breaktrough = 0.175
+   soft_attack = 0.05
+   hard_attack = 0.05
+	}
+    android_company = { 
+	   breaktrough = 0.175
+   soft_attack = 0.05
+   hard_attack = 0.05
+	}
+		
+		research_cost = 2
+		start_year = 1941
+		
+		folder = {
+			name = armour_folder
+			position = { x = -8 y = 10 }
+		}
+		path = {
+			leads_to_tech = enhanced_vision
+			research_cost_coeff = 1
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	enhanced_vision = {
+
+
+  android_aa = { 
+	  		recon = 0.25
+		soft_attack = 0.05
+		breaktrough = 0.05
+	}
+    android_at = { 
+			recon = 0.25
+		soft_attack = 0.05
+		breaktrough = 0.05
+	}
+    android_infantry = { 
+			recon = 0.25
+		soft_attack = 0.05
+		breaktrough = 0.05
+	}
+    android_artillery = { 
+	 		recon = 0.25
+		soft_attack = 0.05
+		breaktrough = 0.05
+	}
+    android_company = { 
+	  		recon = 0.25
+		soft_attack = 0.05
+		breaktrough = 0.05
+	}		
+		
+		path = {
+			leads_to_tech = human_tissues 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1942
+
+		folder = {
+			name = armour_folder
+			position = { x = -8 y = 12 }
+		}
+	
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+
+	human_tissues = { #Panzer IV
+
+       android_aa = { 
+	defense = 0.10
+	soft_attack = 0.10 
+	armor = 0.10 
+	}
+    android_at = { 
+	defense = 0.10
+	soft_attack = 0.10 
+	armor = 0.10 
+	}
+    android_infantry = { 
+	defense = 0.10
+	soft_attack = 0.10 
+	armor = 0.10 
+	}
+    android_artillery = { 
+	defense = 0.10
+	soft_attack = 0.10 
+	armor = 0.10 
+	}
+    android_company = { 
+	defense = 0.10
+	soft_attack = 0.10 
+	armor = 0.10 
+	}
+		
+		
+		research_cost = 2
+		start_year = 1943
+		
+		folder = {
+			name = armour_folder
+			position = { x = -8 y = 14 }
+		}
+		
+		path = {
+			leads_to_tech = human_android 
+			research_cost_coeff = 1
+		}
+		
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			armor
+		}
+	}
+human_android = { #Panzer IV
+
+     enable_equipments = {
+     human_android
+	 }
+		
+		research_cost = 2
+		start_year = 1944
+		
+		folder = {
+			name = armour_folder
+			position = { x = -8 y = 16 }
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		categories = {
+			armor
+		}
+	}
+}
